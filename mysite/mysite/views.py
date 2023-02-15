@@ -3,7 +3,9 @@ from django.shortcuts import render
 
 import openai as ai
 
-ai.api_key = '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' # replace with your key from earlier
+from ..confidential import API_KEY
+
+ai.api_key = API_KEY # replace with your key from earlier
 ingridients = [
     ['Говядина', 'Свинина', 'Баранина', 'Курица', 'Индейка', 'Рыба', 'Морепродукты'],
     ['Грибы', 'Огурцы', 'Помидоры', 'Капуста', 'Морковь', 'Баклажан', 'Кабачок'],
